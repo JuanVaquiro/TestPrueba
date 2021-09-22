@@ -1,70 +1,116 @@
-/* body{
-    text-align: left;
-    color: cornflowerblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(195, 40, 40);
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-}
-
-#cabecera
-{
-    background: #33A;
-    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
-    color: white;
-    font-weight: bold;
-    margin: 0;
-    padding: 0.5em;
-}
-
-#cabecera #tagline
-{
-    padding: 0 0 0 1em;
-    font-weight: normal;
-    font-size: 0.8em;
-}
-
-#container
-{
-    width: 70%;
-    padding: 0;
-    text-align: left;
-    border: 1px solid #DDD;
-    margin: 0 auto;
-}
-
-#container h1
-{
-    font-size: 20px;
-}
-#post
-{
-    padding: 1em;
-} */
-
-.banner-user{
-    border: 1px solid black;
-    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
-    text-align: center;
-    width: 35%;
-    height: 100%;
-    margin: 50px auto;
+body {
+    margin: 0px;
+  }
+  
+  ul {
+    list-style: none;
     padding: 0px;
-}
-.banner-user-col1{
-    border: 1px solid black;
-    background-color:rgb(37, 4, 224);
-    width: 70;
-    margin: 0;
-}
-
-.banner-user-col2{
-    text-align: center;
-    padding: 5px;
-    width: 97%;
-    margin: auto;
+    margin: 0px;
+  }
+  
+  .navbar {
     display: flex;
-    flex-direction: column;
-    
-}
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(237, 237, 238);
+    border-bottom: 1px solid gray;
+    box-shadow: 1px 1px gray;
+  }
+  
+  .navbar > li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 70px;
+  }
+  
+  .botonGenerico {
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+  }
+  .botonGenerico:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  
+  .mainButton {
+    background-color: #1bb76e;
+    color: white;
+  }
+  
+  .mainButton:hover {
+    box-shadow: 1px 1px green;
+  }
+  
+  .secondaryButton {
+    background-color: #66d8f5;
+    color: white;
+  }
+  
+  .secondaryButton:hover {
+    box-shadow: 1px 1px rgb(119, 229, 233);
+  }
+  
+  .buscar {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 4px;
+    border-radius: 8px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .buscar:focus-within {
+    border: 1px solid blue;
+  }
+  
+  .buscar > input {
+    outline: none;
+    border: 0px;
+  }
+  
+  .iconoBusqueda:hover {
+    color: blue;
+  }
+  
+  .breedCardContainer {
+    display: flex;
+  }
+  
+  .breedCard {
+    margin: 10px;
+    background-color: rgb(78, 78, 90);
+    box-shadow: 5px 10px 5px rgb(231, 231, 231);
+    border-radius: 10px;
+  }
+  
+  .breedTitle {
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  
+  .contenedorImagen {
+    width: 240px;
+    height: 350px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .contenedorImagen:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+  
+  .contenedorImagen > img {
+    object-fit: cover;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
