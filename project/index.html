@@ -1,26 +1,53 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Pagina web</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/stayle.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    <div id="container">
-        <div id="cabecera">
-            Hyperblog
-            <span id="tagline">your first option in blogs</span>
-        </div>
-        <div id="post">
-            <h1>Este es el título atractivo e interesante del post</h1>
-            <p>Y este es el parrafo de inicio donde vamos a explicar las cosas increéibles que se pueden hacer con ramas</p>
-            <p>Los blog son la mejor forma de compartir información y tus ideas. Mucho mas que ir a conferencias o salir en Youtube. Excepto si eres un rockstar. Pero estadísticamente no lo eres.... por ahora.</p>
-            <p>Suscribete y dale like</p>
-            <p>Probando merge de local main</p>
-        </div>
-    </div>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/stayle.css" />
+    <link rel="shortcut icon" href="./media/favicon.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/d4cd33a1a3.js" crossorigin="anonymous"></script>
+    <title>Razas de Perros</title>
+  </head>
+  <body>    
+    <header>
+      <ul class="navbar">
+        <li>
+          <img src="./media/logo.png" alt="imagen" class="logo" />
+        </li>
+        <li>
+          <button class="botonGenerico mainButton">Nuevo post</button>
+        </li>
+        <li>
+          <div class="buscar">
+            <input placeholder="Buscar una raza" />
+            <i class="fas fa-search botonGenerico iconoBusqueda"></i>
+          </div>
+        </li>
+        <li><button class="botonGenerico secondaryButton">Login</button></li>
+        <li><button class="botonGenerico mainButton">Registro</button></li>
+      </ul>
+    </header>
+    <main>
+      <section>
+        <h1>Razas de Perros</h1>
+        <ul class="breedCardContainer">
+          <li class="breedCard">
+            <div class="contenedorImagen">
+              <img src="./media/borderCollie.jpg" alt="Border Collie" />
+            </div>
+            <span class="breedTitle">Border Collie </span>
+          </li>
+          <li class="breedCard">
+            <div class="contenedorImagen">
+              <img src="./media/rhodesian.jpg" alt="Border Collie" />
+            </div>
+            <span class="breedTitle">Rhodesian</span>
+          </li>
+        </ul>
+      </section>
+      <section></section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
